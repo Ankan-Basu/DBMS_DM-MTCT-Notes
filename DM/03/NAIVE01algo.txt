@@ -1,0 +1,31 @@
+// Naive Bayesian  Classification Algorithm
+Input : Number of Total Training set Data Tuples e.g. 14
+        Total no. of Dimensions/Features/Attributes per Tuple e.g. 4
+        Total no. of Class values e.g. 2
+	Feature names : D in number - e.g. Age,Income,Student,CreditRt
+	Training Data tuples' feature values initialized e.g. 14 in number
+        Training Data tuples' class values initialized e.g. 14 in Number
+	Feature Values for Test Data tuple(s) X  initialized/input : one at a time
+        Number of value options for each feature initialized - e.g. 3,3,2,2
+        Available class value options - e.g. Yes, No
+	Available Feature/Attribute value options - e.g. {Youth/Middle/Senior ...} 
+Output: Overall Class Value Probabilities for each class [optional]
+	Individual Atrribute Probability values for each class for each attribute value in test tuple X
+	Probability of Test tuple X belonging to each class assuming Naive class-conditional independance
+	Choice of Highest Probability Class 
+	Overall Performance Measurement on the whole test dataset (if class value available for test data)   
+Algorithm
+Step 1:	// Setup or initialize all Input Dataset values appropriately
+Step 2: // Model Building explained below in steps [3-7]
+Step 3: // Overall Class Counts measured within training set data for each individual class 
+Step 4: // Overall Class Value Probabilities measured and displayed [optional]
+Step 5: // Individual Attribute Probability values measured and stored as explained below in steps [6-7]
+Step 6: // for each attribute: for each value of that attribute : for each class keep Combination Count   
+Step 7: // Calculate Probability by dividing Combination Count by corresponding Class Count in each case
+Step 8: // Initialize Performance Count to 0
+Step 9: // for each test tuple X do the following as explained in steps [10-13] by using Model 
+Step 10 // for each Class : Multiply Overall Class Value Probability with Individual Attribute Probabilities
+Step 11 // Display Overall Probability of X belonging to each class as the above product [optional]
+Step 12 // Choose and display the highest probability class for X [display optional]
+Step 13 // If Highest Probability Class Value matches with Given Class Value of X, increment Performance Count
+Step 14 // Display Performance (percentage mode) of Model 
